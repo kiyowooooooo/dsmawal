@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TokoMasFadjar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="profil.html">
+          <img src="images/habibi.png" alt="Logo" width="35" height="34">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bestseller">bestseller</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Kategori </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ruangtamu.html">Ruang Tamu</a></li>
+                <li><a class="dropdown-item" href="ruangkluarga.html">Ruang Keluarga</a></li>
+                <li><a class="dropdown-item" href="ruangmakan.html">Ruang Makan</a></li>
+                <li><a class="dropdown-item" href="ruangdapur.html">Ruang Dapur</a></li>
+                <li><a class="dropdown-item" href="ruangkerja.html">Ruang Kerja</a></li>
+                <li><a class="dropdown-item" href="ruangtidur.html">Ruang Tidur</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="lainnya.html">Lainnya</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Produk </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="happysale.html">Happy Sale</a></li>
+                <li><a class="dropdown-item" href="semuaproduk.html">Semua Produk</a></li>
+                <li><a class="dropdown-item" href="produkpromo.html">Produk Promo</a></li>
+                <li><a class="dropdown-item" href="pakethemat.html">Paket Bundling</a></li>
+                <li><a class="dropdown-item" href="produkbaru.html">Produk Terbaru</a></li>
+                <li><a class="dropdown-item" href="produklaris.html">Produk Terlaris</a></li>
+                <li><a class="dropdown-item" href="premiumproduk.html">Premium Produk</a></li>
+                <li><a class="dropdown-item" href="100an.html">Under 100K</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="semuaproduk.html">Lainnya</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="brosur.html">Brosur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Hubungi kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq_news.html">FAQ & News page</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" onsubmit="return searchContent(event)">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>          
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Carousel -->
+    <div class="d-flex justify-content-center mt-4">
+<div id="carouselBannerKategori" class="carousel slide" data-bs-ride="carousel" style="width: 1000px; height: 400px; overflow: hidden;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="kursi_hal2.html">
+      <img src="Images/banner.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="banner1">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="kursi_hal2.html">
+      <img src="Images/banner.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="banner2">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="kursi.html">
+      <img src="Images/banner.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="banner3">
+      </a>
+    </div>
+  </div>
+
+  <!-- Anak Panah dengan area klik kecil -->
+  <button class="carousel-control-prev small-btn" type="button" data-bs-target="#carouselBannerKategori" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next small-btn" type="button" data-bs-target="#carouselBannerKategori" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+<!--Stylo-->
+<style>
+  .carousel-control-prev.small-btn,
+  .carousel-control-next.small-btn {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-prev.small-btn {
+    left: 15px;
+  }
+
+  .carousel-control-next.small-btn {
+    right: 15px;
+  }
+</style>
+<!--Stylo end-->
+    <div class="container-fluid pt-4 p-4">
+      <div class="container text-center">
+        <h2 class="mb-2">Keunggulan Toko</h2>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="row">
+    
+        <!-- Kualitas Bahan -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Kualitas Bahan Terbaik</h5>
+          <p>
+            Kami hanya menggunakan bahan pilihan berkualitas tinggi, seperti kayu solid, rotan alami, dan finishing premium untuk memastikan setiap produk tahan lama dan bernilai estetika tinggi.
+          </p>
+        </div>
+    
+        <!-- Desain Modern -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Desain Modern & Fungsional</h5>
+          <p>
+            Mebel kami mengikuti tren desain terkini dengan fungsionalitas maksimal. Cocok untuk berbagai gaya ruangan dari minimalis hingga klasik.
+          </p>
+        </div>
+    
+        <!-- Custom Furniture -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Custom Furniture</h5>
+          <p>
+            Bisa memesan furnitur sesuai ukuran, desain, dan warna yang diinginkan (by request).
+          </p>
+        </div>
+    
+        <!-- Garansi Produk -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Garansi Produk</h5>
+          <p>
+            Memberikan jaminan garansi atas produk yang dibeli dalam periode tertentu.
+          </p>
+        </div>
+    
+        <!-- Harga Kompetitif -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Harga Kompetitif</h5>
+          <p>
+            Kami menawarkan harga yang bersaing dengan kualitas terbaik, sehingga pelanggan mendapatkan nilai lebih dari setiap pembelian.
+          </p>
+        </div>
+    
+        <!-- Pengiriman Cepat -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Pengiriman Cepat & Aman</h5>
+          <p>
+            Didukung tim pengiriman profesional untuk memastikan produk sampai dengan cepat, aman, dan tanpa kerusakan.
+          </p>
+        </div>
+    
+        <!-- Pelayanan Profesional -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Pelayanan Profesional</h5>
+          <p>
+            Staf kami siap melayani dengan ramah dan membantu Anda memilih produk terbaik sesuai kebutuhan dan selera.
+          </p>
+        </div>
+    
+        <!-- Produk Lengkap -->
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-2">Produk Lengkap</h5>
+          <p>
+            Menyediakan berbagai pilihan mebel untuk ruang tamu, ruang makan, kamar tidur, dan kantor.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="container mt-4">
+      <div class="row">
+        
+        <!-- Ruang Tamu -->
+        <div class="col-md-4 mb-3">
+          <h5 class="text-center">Ruang Tamu</h5>
+          <div style="width: 100%; max-width: 350px; height: 250px; overflow: hidden; margin: auto;">
+            <a href="v1.html" class="text-decoration-none text-dark">
+              <img src="Images/persegi.jpg" class="img-fluid rounded" alt="Ruang Tamu">
+            </a>
+          </div>
+          <div class="text-center mt-2">
+            <p>Mulai dari</p>
+            <h6>Rp. 499.000</h6>
+          </div>
+        </div>
+    
+        <!-- Ruang Keluarga -->
+        <div class="col-md-4 mb-3">
+          <h5 class="text-center">Ruang Keluarga</h5>
+          <div style="width: 100%; max-width: 350px; height: 250px; overflow: hidden; margin: auto;">
+            <a href="v1.html" class="text-decoration-none text-dark">
+              <img src="Images/persegi.jpg" class="img-fluid rounded" alt="Ruang Keluarga">
+            </a>
+          </div>
+          <div class="text-center mt-2">
+            <p>Mulai dari</p>
+            <h6>Rp. 899.000</h6>
+          </div>
+        </div>
+    
+        <!-- Ruang Makan -->
+        <div class="col-md-4 mb-3">
+          <h5 class="text-center">Ruang Makan</h5>
+          <div style="width: 100%; max-width: 350px; height: 250px; overflow: hidden; margin: auto;">
+            <a href="v1.html" class="text-decoration-none text-dark">
+              <img src="Images/persegi.jpg" class="img-fluid rounded" alt="Ruang Makan">
+            </a>
+          </div>
+          <div class="text-center mt-2">
+            <p>Mulai dari</p>
+            <h6>Rp. 1.299.000</h6>
+          </div>
+        </div>
+      </div>
+    </div>    
+    
+    <div class="container-fluid pt-4 p-4">
+      <div class="container text-center">
+        <div id="bestseller"></div>
+        <h2 class="mb-2">Produk Bestseller</h2>
+      </div>
+    </div>
+    
+    <div class="container-fluid pt-3 p-3">
+      <div class="d-flex flex-wrap justify-content-evenly align-items-stretch gap-3">
+        
+        <!-- Card Produk -->
+        <div class="card" style="width: 20rem;">
+          <div style="width: 100%; max-width: 350px; height: 250px; overflow: hidden; margin: auto; display: flex; align-items: center; justify-content: center;">
+            <a href="#">
+              <img src="images/design_kursi.png" class="card-img-top" alt="Kursi-1" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dinning Chair</h5>
+            <p class="card-text">Kursi makan adalah jenis kursi yang dirancang khusus untuk digunakan di area ruang makan.</p>
+            <a href="kasur.html" class="btn btn-primary">Lainnya</a>
+          </div>
+        </div>
+    
+        <div class="card" style="width: 20rem;">
+          <div style="width: 100%; max-width: 350px; height: 250px; overflow: hidden; margin: auto; display: flex; align-items: center; justify-content: center;">
+            <a href="#">
+              <img src="images/design_kursi.png" class="card-img-top" alt="Kursi-1" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dinning Chair</h5>
+            <p class="card-text">Kursi makan adalah jenis kursi yang dirancang khusus untuk digunakan di area ruang makan.</p>
+            <a href="kasur.html" class="btn btn-primary">Lainnya</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <div style="width: 100%; max-width: 350px; height: 250px; overflow: hidden; margin: auto; display: flex; align-items: center; justify-content: center;">
+            <a href="#">
+              <img src="images/design_kursi.png" class="card-img-top" alt="Kursi-1" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dinning Chair</h5>
+            <p class="card-text">Kursi makan adalah jenis kursi yang dirancang khusus untuk digunakan di area ruang makan.</p>
+            <a href="kasur.html" class="btn btn-primary">Lainnya</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    <!-- Footer -->
+<footer class="mt-5 bg-body-tertiary text-dark">
+  <div class="container py-4">
+    <div class="row">
+      <!-- Tentang Kami -->
+      <div class="col-md-4 mb-3">
+        <div id="kontak"></div>
+        <h5 class="fw-bold">Tentang Kami</h5>
+        <p><strong>Nama Toko:</strong> Ruko Difa Sejahtera Mebel</p>
+        <p><strong>Alamat:</strong> Jl. Raya Wendit Barat No 6 Ruko C-D,<br />Lowoksoro, Mangliawan, Kec. Pakis,<br />Kabupaten Malang, Jawa Timur 65154</p>
+        <p><strong>Jam Buka:</strong> Setiap Hari, 08.00 - 20.00</p>
+      </div>
+
+      <!-- Kontak -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Kontak</h5>
+        <p><strong>Telepon:</strong> 0813-3360-586 / +62 813-3360-586</p>
+        <p><strong>Email:</strong> 
+          <a href="mailto:difasejahteramebel@gmail.com" class="text-decoration-none text-dark">
+            difasejahteramebel@gmail.com
+          </a>
+        </p>
+        <p><strong>Lokasi Maps:</strong> 2MXF+63 Mangliawan, Kabupaten Malang</p>
+      </div>
+
+      <!-- FAQ -->
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">FAQ</h5>
+        <p><strong>Apakah bisa pesan custom?</strong><br />Ya, kami menerima pesanan custom sesuai permintaan pelanggan.</p>
+        <p><strong>Apakah bisa kirim ke luar kota?</strong><br />Bisa! Kami melayani pengiriman ke berbagai daerah di Jawa Timur.</p>
+        <p><strong>Pembayaran bisa lewat apa saja?</strong><br />Kami menerima pembayaran tunai, transfer bank, dan e-wallet tertentu.</p>
+      </div>
+    </div>
+
+    <!-- Media Sosial -->
+    <div class="row text-center mt-4">
+      <div class="col">
+        <a href="https://wa.me/+6281333860586" style="color: inherit; text-decoration: none; margin: 0 10px;">
+          <i class="bi bi-whatsapp" style="font-size: 45px;"></i>
+        </a>
+        <a href="https://www.instagram.com/difamebel?igsh=MW44c3NycnU5YmZ3" style="color: inherit; text-decoration: none; margin: 0 10px;">
+          <i class="bi bi-instagram" style="font-size: 45px;"></i>
+        </a>
+        <a href="https://www.facebook.com/" style="color: inherit; text-decoration: none; margin: 0 10px;">
+          <i class="bi bi-facebook" style="font-size: 45px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- 3. Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+
+  </body>
+</html>
